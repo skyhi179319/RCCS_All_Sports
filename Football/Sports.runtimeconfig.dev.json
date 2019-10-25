@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\skyhi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\skyhi\\.nuget\\packages"
+      "C:\\Users\\skyhi\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }
