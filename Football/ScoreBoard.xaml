@@ -1,0 +1,117 @@
+﻿<Window x:Class="Sports.ScoreBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sports"
+        mc:Ignorable="d"
+        Title="Score Board" Height="500" Width="500">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Football">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Basketball">
+                <Grid Background="#FFE5E5E5" Initialized="AutoStartScore">
+                    <Border x:Name="ScoresFrame" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="109" Margin="0,10,0,0" VerticalAlignment="Top" Width="434">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFEAE9E4"/>
+                                <GradientStop Color="#FFECDC3C" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid x:Name="ScoresArea">
+                            <Border x:Name="Home" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="72" Margin="30,10,0,0" VerticalAlignment="Center" Width="99">
+                                <Grid x:Name="HomeScoreArea" Margin="9,9,9,9">
+                                    <Grid.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFE0DED1"/>
+                                            <GradientStop Color="#FFF0D214" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Grid.Background>
+                                    <TextBlock x:Name="HomeScore" TextWrapping="Wrap" Margin="10,10,10,10" TextAlignment="Center" Background="#FFE0DED1"/>
+                                </Grid>
+                            </Border>
+                            <Border x:Name="Away" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Right" Height="72" Margin="0,22,30,0" VerticalAlignment="Top" Width="99">
+                                <Grid x:Name="AwayScoreArea" Margin="9,9,9,9">
+                                    <Grid.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFE0DED1"/>
+                                            <GradientStop Color="#FFF0D214" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Grid.Background>
+                                    <TextBlock x:Name="AwayScore" TextWrapping="Wrap" Margin="10,10,10,10" TextAlignment="Center" Background="#FFE0DED1"/>
+                                </Grid>
+                            </Border>
+                            <Border x:Name="UpdateArea" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="72" Margin="0,22,0,0" VerticalAlignment="Top" Width="99">
+                                <Grid x:Name="Update" Margin="9,9,9,9" Background="Black">
+                                    <Button x:Name="CreateButton" Content="Create" Margin="10,0,10,26" Click="CreateFile"/>
+                                    <Button x:Name="UpdateButton" Content="Update" Height="26" VerticalAlignment="Top" Margin="10,26,10,0" Click="UpdateScore"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="HomeScoring" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="210" Margin="22,88,0,0" VerticalAlignment="Center" Width="135">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFEEEDE6"/>
+                                <GradientStop Color="#FFDCD770" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid x:Name="HomeScoringArea" Margin="9,24,9,32" Background="#FFB9E0AE">
+                            <Button x:Name="HomeFreeThrow" Content="Free Throw" HorizontalAlignment="Center" Height="27" Margin="0,10,0,0" VerticalAlignment="Top" Width="95" Click="HomeFreeThrowButton"/>
+                            <Button x:Name="Home2point" Content="2 Point" HorizontalAlignment="Center" Height="27" Margin="0,37,0,0" VerticalAlignment="Top" Width="95" Click="HomeTwoPointButton"/>
+                            <Button x:Name="Home3point" Content="3 Point" HorizontalAlignment="Center" Height="27" Margin="0,64,0,0" VerticalAlignment="Top" Width="95" Click="HomeThreePointButton"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="AwayScoring" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Right" Height="210" Margin="0,88,22,0" VerticalAlignment="Center" Width="135">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFEEEDE6"/>
+                                <GradientStop Color="#FFDCD770" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid x:Name="AwayScoringArea" Margin="9,24,9,32" Background="#FFB9E0AE">
+                            <Button x:Name="AwayFreeThrow" Content="Free Throw" HorizontalAlignment="Center" Height="27" Margin="0,10,0,0" VerticalAlignment="Top" Width="95" Click="AwayFreeThrowButton"/>
+                            <Button x:Name="Away2point" Content="2 Point" HorizontalAlignment="Center" Height="27" Margin="0,37,0,0" VerticalAlignment="Top" Width="95" Click="AwayTwoPointButton"/>
+                            <Button x:Name="Away3point" Content="3 Point" HorizontalAlignment="Center" Height="27" Margin="0,64,0,0" VerticalAlignment="Top" Width="95" Click="AwayThreePointButton"/>
+                        </Grid>
+                    </Border>
+                    <Border x:Name="ExtraArea" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="302" Margin="0,133,0,0" VerticalAlignment="Center" Width="152">
+                        <Grid x:Name="Extras" Background="#FFE1E4C7">
+                            <Border x:Name="Fouls" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="84" Margin="0,10,0,0" VerticalAlignment="Top" Width="130" Background="#FFD1D69E">
+                                <Grid x:Name="FoulNumber" Margin="30,5,30,9">
+                                    <TextBlock x:Name="HomeFouls" TextWrapping="Wrap" Background="#FFEAD9D9" HorizontalAlignment="Center" VerticalAlignment="Top" Height="18" TextAlignment="Center" Width="50"/>
+                                    <TextBlock x:Name="AwayFouls" TextWrapping="Wrap" Background="#FFEAD9D9" HorizontalAlignment="Center" VerticalAlignment="Top" Height="18" TextAlignment="Center" Width="50" Margin="0,34,0,0"/>
+                                    <Button x:Name="UpdateFouls" Content="Update" HorizontalAlignment="Center" Height="11" Margin="0,57,0,0" VerticalAlignment="Top" Width="49" FontSize="5" Click="UpdateFoulsButton"/>
+                                </Grid>
+                            </Border>
+                            <Border x:Name="Controls" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="83" Margin="0,207,0,0" VerticalAlignment="Top" Width="130">
+                                <Grid x:Name="ControlArea">
+                                    <TabControl x:Name="ControlTabs">
+                                        <TabItem x:Name="FoulsTab" Header="Fouls">
+                                            <Grid x:Name="FoulTabContent" Background="#FFE5E5E5">
+                                                <Border x:Name="HomeFoulButtonsArea" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="38" Margin="0,5,0,0" VerticalAlignment="Top" Width="51">
+                                                    <Grid x:Name="HomeFoulButtons">
+                                                        <Button x:Name="CreateHomeFoulButton" Content="Create" HorizontalAlignment="Center" Height="18" VerticalAlignment="Top" Width="29" FontSize="6" Click="CreateHomeFoulFile"/>
+                                                        <Button x:Name="HomeFoulButton" Content="H Foul" HorizontalAlignment="Center" Height="18" Margin="0,18,0,0" VerticalAlignment="Top" Width="29" FontSize="6" Click="HomeFoulButtonh"/>
+                                                    </Grid>
+                                                </Border>
+                                                <Border x:Name="AwayFoulButtonsArea" BorderThickness="1" BorderBrush="Black" Height="38" Margin="0,5,6,0" VerticalAlignment="Top" Width="51" HorizontalAlignment="Right">
+                                                    <Grid x:Name="AwayFoulButtons">
+                                                        <Button x:Name="CreateAwayFoulButton" Content="Create" HorizontalAlignment="Center" Height="18" VerticalAlignment="Top" Width="29" FontSize="6" Click="CreateAwayFoulFile"/>
+                                                        <Button x:Name="AwayFoulButton" Content="A Foul" HorizontalAlignment="Center" Height="18" Margin="0,18,0,0" VerticalAlignment="Top" Width="29" FontSize="6" Click="AwayFoulButtona"/>
+                                                    </Grid>
+                                                </Border>
+                                            </Grid>
+                                        </TabItem>
+                                    </TabControl>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

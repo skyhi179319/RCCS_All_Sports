@@ -1,0 +1,80 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sports"
+        xmlns:Primitives="clr-namespace:System.Windows.Controls.Ribbon.Primitives;assembly=System.Windows.Controls.Ribbon" x:Class="Sports.MainWindow"
+        mc:Ignorable="d"
+        Title="Start" Height="450" Width="800" Background="#FFA6A67E">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF5B8ED"/>
+                <GradientStop Color="#FFA938CB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,395,0,0" Text="Created By: Skyler Barr" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="285" TextAlignment="Center">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9B7F20"/>
+                    <GradientStop Color="#FF1B78E8" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFD8D8CC" Offset="0"/>
+                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center" Height="282" Width="691">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF9B2727" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid Height="142" Width="507" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Button Content="Football" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="221" Background="#FF91D320" Click="Football">
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFEA2222"/>
+                            <GradientStop Color="#FFA06927" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                </Button>
+                <Button Content="Basketball" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="221" Background="#FFD88735" Click="Basketball" Margin="0,86,0,0" MouseRightButtonDown="Message">
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFF0EAD8"/>
+                            <GradientStop Color="#FFE8DF1B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                </Button>
+                <Button Content="Sports Management" HorizontalAlignment="Center" Height="29" Margin="0,27,0,0" VerticalAlignment="Top" Width="221" Background="#FF1B31BD" Click="Management">
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF9B7F20"/>
+                            <GradientStop Color="#FFE8DF1B" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                </Button>
+                <Button Content="System" Margin="14,56,364,56" Background="#FF171717" Foreground="#FFF0EDD3" Click="System_Pro"/>
+                <Button Content="Game Day" Margin="14,86,364,26" Background="#FF441C1C" Foreground="#FFF0EDD3" Click="GameDay"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>

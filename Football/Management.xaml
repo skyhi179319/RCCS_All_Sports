@@ -1,0 +1,941 @@
+﻿<Window x:Class="Sports.Management"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sports"
+        mc:Ignorable="d"
+        Title="Management" Height="579" Width="1181"
+    xmlns:System="clr-namespace:System;assembly=System.Runtime">
+    <Window.Resources>
+        <Style x:Key="Main" TargetType="{x:Type TabItem}"/>
+        <System:String x:Key="Points_Wanted">TextBox</System:String>
+        <Style x:Key="Popup" TargetType="{x:Type Popup}">
+            <Setter Property="StaysOpen" Value="False"/>
+            <Setter Property="IsOpen" Value="True"/>
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="122"/>
+            <Setter Property="Placement" Value="Center"/>
+            <Setter Property="IsEnabled" Value="True"/>
+            <Setter Property="Cursor" Value="Cross"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+        </Style>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Center" Width="1181">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFECD816"/>
+                <GradientStop Color="#FF0A60F7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="397*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Margin="100,42,100,42">
+            <TabItem Style="{DynamicResource Main}" Header="Players" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="31*"/>
+                        <ColumnDefinition Width="130*"/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl Margin="10,10,49,30" Grid.ColumnSpan="2">
+                        <TabItem Header="Football" Style="{DynamicResource Main}">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="93*"/>
+                                    <ColumnDefinition Width="808*"/>
+                                </Grid.ColumnDefinitions>
+                                <TabControl Margin="10,10,35,39" Grid.ColumnSpan="2">
+                                    <TabItem Header="2018">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="61*"/>
+                                                <ColumnDefinition Width="789*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TabControl Margin="10,10,10,27" Grid.ColumnSpan="2">
+                                                <TabItem Header="8th Grade">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Freshmen">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Sophmore">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Juniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Seniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="2019">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="10,10,10,27">
+                                                <TabItem Header="8th Grade">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Freshmen">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Sophmore">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Juniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Seniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Basketball">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl Margin="10,10,29,27">
+                                    <TabItem Header="2018">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="10,10,16,39">
+                                                <TabItem Header="8th Grade">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Freshmen">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Sophmore">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Juniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Seniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="2019">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="10,10,16,39">
+                                                <TabItem Header="8th Grade">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Freshmen">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Sophmore">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Juniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="Seniors" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Records" Style="{DynamicResource Main}">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="934*"/>
+                    </Grid.ColumnDefinitions>
+                    <TabControl Margin="10,10,33,30" Grid.ColumnSpan="2">
+                        <TabItem Header="Football">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl Margin="10,10,29,31">
+                                    <TabItem Header="2018">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5"/>
+                                    </TabItem>
+                                    <TabItem Header="2019">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5"/>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Basketball">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl Margin="10,10,31,29">
+                                    <TabItem Header="2018">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5"/>
+                                    </TabItem>
+                                    <TabItem Header="2019">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5"/>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Schedules">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <TabControl Margin="10,10,31,36">
+                        <TabItem Header="Football">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <TabControl Margin="10,10,37,27">
+                                    <TabItem Header="Preseason">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="10,10,27,27">
+                                                <TabItem Header="2018">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="2019">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Regular Season">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="10,10,57,33">
+                                                <TabItem Header="2018">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="2019">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Playoffs" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <TabControl Margin="31,10,39,31">
+                                                <TabItem Header="Regionals">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TabControl Margin="10,10,35,31">
+                                                            <TabItem Header="2018">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                            <TabItem Header="2019">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                        </TabControl>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="State">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TabControl Margin="10,10,32,29">
+                                                            <TabItem Header="2018">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFA6A67E"/>
+                                                                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                            <TabItem Header="2019">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFA6A67E"/>
+                                                                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                        </TabControl>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Basketball">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="19*"/>
+                                    <ColumnDefinition Width="18*"/>
+                                    <ColumnDefinition Width="882*"/>
+                                </Grid.ColumnDefinitions>
+                                <TabControl Margin="10,19,33,47" Grid.ColumnSpan="3">
+                                    <TabItem Header="Preseason">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="61*"/>
+                                                <ColumnDefinition Width="229*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TabControl Margin="10,10,61,4" Grid.ColumnSpan="2">
+                                                <TabItem Header="2018">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="2019">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Regular Season">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="4*"/>
+                                                <ColumnDefinition Width="83*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TabControl Margin="10,10,61,4" Grid.ColumnSpan="2">
+                                                <TabItem Header="2018">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5"/>
+                                                </TabItem>
+                                                <TabItem Header="2019">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <Border BorderThickness="1" BorderBrush="Black" Margin="46,25,58,10">
+                                                            <Border.Background>
+                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                    <GradientStop Color="#FFEEEDE4"/>
+                                                                    <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                </LinearGradientBrush>
+                                                            </Border.Background>
+                                                            <TabControl Margin="9,9,9,9">
+                                                                <TabItem Header="Classics">
+                                                                    <Grid>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="64*"/>
+                                                                            <ColumnDefinition Width="599*"/>
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Grid.Background>
+                                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                <GradientStop Color="#FFEEEDE4"/>
+                                                                                <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                            </LinearGradientBrush>
+                                                                        </Grid.Background>
+                                                                        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="130" Margin="29,0,0,0" VerticalAlignment="Center" Width="469" Grid.Column="1">
+                                                                            <Border.Background>
+                                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                    <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                                    <GradientStop Color="White" Offset="0.004"/>
+                                                                                </LinearGradientBrush>
+                                                                            </Border.Background>
+                                                                            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" Height="84" Width="255">
+                                                                                <TextBlock HorizontalAlignment="Center" Height="15" Text="Big Boo" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextAlignment="Center" Margin="0,10,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Center" Height="15" Text="Huron" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextAlignment="Center" Margin="0,26,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Center" Height="15" Text="Jones County" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextAlignment="Center" Margin="0,42,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Center" Height="15" Text="DWU" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextAlignment="Center" Margin="0,58,0,0"/>
+                                                                            </Grid>
+                                                                        </Border>
+                                                                    </Grid>
+                                                                </TabItem>
+                                                                <TabItem Header="Away">
+                                                                    <Grid>
+                                                                        <Grid.ColumnDefinitions>
+                                                                            <ColumnDefinition Width="115*"/>
+                                                                            <ColumnDefinition Width="548*"/>
+                                                                        </Grid.ColumnDefinitions>
+                                                                        <Grid.Background>
+                                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                <GradientStop Color="#FFEEEDE4"/>
+                                                                                <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                            </LinearGradientBrush>
+                                                                        </Grid.Background>
+                                                                        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="130" Margin="93,0,0,0" VerticalAlignment="Center" Width="469" Grid.ColumnSpan="2">
+                                                                            <Border.Background>
+                                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                    <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                                    <GradientStop Color="White" Offset="0.004"/>
+                                                                                </LinearGradientBrush>
+                                                                            </Border.Background>
+                                                                            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" Height="97" Width="255">
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Philip" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,5,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Lyman" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,24,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Wall" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,42,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Harding Co." TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,57,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Lemmon" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,5,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Kadoka" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,24,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text=" Belle Fourche" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,42,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Alliance" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,57,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Hot Springs" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="62,76,0,0"/>
+                                                                            </Grid>
+                                                                        </Border>
+                                                                    </Grid>
+                                                                </TabItem>
+                                                                <TabItem Header="Home" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                                                                    <Grid>
+                                                                        <Grid.Background>
+                                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                <GradientStop Color="#FFEEEDE4"/>
+                                                                                <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                            </LinearGradientBrush>
+                                                                        </Grid.Background>
+                                                                        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="130" Margin="93,0,0,0" VerticalAlignment="Center" Width="469">
+                                                                            <Border.Background>
+                                                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                                    <GradientStop Color="#FFC7C48B" Offset="1"/>
+                                                                                    <GradientStop Color="White" Offset="0.004"/>
+                                                                                </LinearGradientBrush>
+                                                                            </Border.Background>
+                                                                            <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" Height="97" Width="255">
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Hill City" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,5,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Red Cloud" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,24,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Bennett Co." TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,42,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Custer" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="10,57,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="Chadron" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,5,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text="New Underwood" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,24,0,0"/>
+                                                                                <TextBlock HorizontalAlignment="Left" Height="18" Text=" Lead-Deadwood" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" TextAlignment="Center" Margin="108,42,0,0"/>
+                                                                            </Grid>
+                                                                        </Border>
+                                                                    </Grid>
+                                                                </TabItem>
+                                                            </TabControl>
+                                                        </Border>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                    <TabItem Header="Playoffs">
+                                        <TabItem.Background>
+                                            <LinearGradientBrush EndPoint="0,1">
+                                                <GradientStop Color="#FFF0F0F0"/>
+                                                <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TabItem.Background>
+                                        <Grid Background="#FFE5E5E5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="19*"/>
+                                                <ColumnDefinition Width="155*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TabControl Margin="31,10,39,31" Grid.ColumnSpan="2">
+                                                <TabItem Header="Regionals">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TabControl Margin="10,10,35,31">
+                                                            <TabItem Header="2018">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                            <TabItem Header="2019">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                        </TabControl>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem Header="State">
+                                                    <TabItem.Background>
+                                                        <LinearGradientBrush EndPoint="0,1">
+                                                            <GradientStop Color="#FFF0F0F0"/>
+                                                            <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                        </LinearGradientBrush>
+                                                    </TabItem.Background>
+                                                    <Grid Background="#FFE5E5E5">
+                                                        <TabControl Margin="10,10,32,29">
+                                                            <TabItem Header="2018" Style="{DynamicResource Main}">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                            <TabItem Header="2019">
+                                                                <TabItem.Background>
+                                                                    <LinearGradientBrush EndPoint="0,1">
+                                                                        <GradientStop Color="#FFF0F0F0"/>
+                                                                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </TabItem.Background>
+                                                                <Grid Background="#FFE5E5E5"/>
+                                                            </TabItem>
+                                                        </TabControl>
+                                                    </Grid>
+                                                </TabItem>
+                                            </TabControl>
+                                        </Grid>
+                                    </TabItem>
+                                </TabControl>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Files" HorizontalAlignment="Center" Height="20" VerticalAlignment="Center" Width="54">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFE5E5E5">
+                    <TabControl Margin="31,10,31,32">
+                        <TabItem Header="Football">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                        <TabItem Header="Basketball">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid>
+                                <Grid.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFDED7BF"/>
+                                        <GradientStop Color="#FFE6BA26" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Grid.Background>
+                                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Grid.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFACA27F"/>
+                                            <GradientStop Color="White" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Grid.Background>
+                                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="349" VerticalAlignment="Center" Width="306">
+                                        <Border.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FFE4E4D3"/>
+                                                <GradientStop Color="#FFEAEAA5" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <Grid Margin="34,28,28,26" Background="#FFDABA2A">
+                                            <TextBlock HorizontalAlignment="Left" Height="19" Margin="29,20,0,0" Text="Goals" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" TextAlignment="Center" Background="#FF1EB6D8"/>
+                                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="178" Margin="0,54,0,0" VerticalAlignment="Top" Width="184" Background="#FFFF0F0F">
+                                                <Grid Background="#FFE6C0C0" Margin="21,9,18,9">
+                                                    <Button Content="Goals Create File" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDoubleClick="CreateFile_Goals">
+                                                        <Button.Background>
+                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                <GradientStop Color="#FFE6E0D8"/>
+                                                                <GradientStop Color="#FFEE9121" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Button.Background>
+                                                    </Button>
+                                                    <Button Content="Goals" HorizontalAlignment="Center" Height="29" Margin="0,35,0,0" VerticalAlignment="Top" Width="93" MouseDoubleClick="Writegoals">
+                                                        <Button.Background>
+                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                                <GradientStop Color="#FFD8E4D2"/>
+                                                                <GradientStop Color="#FF7FE84E" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Button.Background>
+                                                    </Button>
+                                                </Grid>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="349" Margin="502,0,0,0" VerticalAlignment="Center" Width="306">
+                                        <Border.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FFE4E4D3"/>
+                                                <GradientStop Color="#FFEAEAA5" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <Grid Margin="34,28,28,26" Background="#FFDABA2A">
+                                            <TextBlock HorizontalAlignment="Left" Height="19" Margin="29,20,0,0" Text="Plays" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" TextAlignment="Center" Background="#FF1EB6D8"/>
+                                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="178" Margin="0,54,0,0" VerticalAlignment="Top" Width="184" Background="#FFFF0F0F">
+                                                <Grid Background="#FFE6C0C0" Margin="10,9,10,9">
+                                                    <Grid Background="#FFE5E5E5" Margin="7,0,81,4">
+                                                        <Button Content="Off 1" HorizontalAlignment="Left" Height="21" Margin="5,5,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playone"/>
+                                                        <Button Content="Off 2" HorizontalAlignment="Left" Height="21" Margin="5,26,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playtwo"/>
+                                                        <Button Content="Off 3" HorizontalAlignment="Left" Height="21" Margin="5,47,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playthree"/>
+                                                        <Button Content="Off 4" HorizontalAlignment="Left" Height="21" Margin="5,0,0,0" VerticalAlignment="Center" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfour"/>
+                                                        <Button Content="Off 5" HorizontalAlignment="Left" Height="21" Margin="5,90,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfive"/>
+                                                        <Button Content="Off 6" HorizontalAlignment="Left" Height="21" Margin="5,111,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playsix"/>
+                                                        <Button Content="Off 7" HorizontalAlignment="Left" Height="21" Margin="5,132,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playseven"/>
+                                                    </Grid>
+                                                    <Grid Background="#FFE5E5E5" Margin="81,0,6,4">
+                                                        <Button Content="Def 1-8" HorizontalAlignment="Left" Height="21" Margin="5,5,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playeight"/>
+                                                        <Button Content="Def 2-9" HorizontalAlignment="Left" Height="21" Margin="5,26,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playnine"/>
+                                                        <Button Content="Def 3-10" HorizontalAlignment="Left" Height="21" Margin="5,47,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playten"/>
+                                                        <Button Content="Def 4-11" HorizontalAlignment="Left" Height="21" Margin="5,0,0,0" VerticalAlignment="Center" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playeleven"/>
+                                                        <Button Content="Def 5-12" HorizontalAlignment="Left" Height="21" Margin="5,90,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playtwelve"/>
+                                                        <Button Content="Def 6-13" HorizontalAlignment="Left" Height="21" Margin="5,111,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playthirteen"/>
+                                                        <Button Content="Def 7-14" HorizontalAlignment="Left" Height="21" Margin="5,132,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfourteen"/>
+                                                    </Grid>
+                                                </Grid>
+                                            </Border>
+                                        </Grid>
+                                    </Border>
+                                </Grid>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Data">
+                            <TabItem.Background>
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop Color="#FFF0F0F0"/>
+                                    <GradientStop Color="#FFA6A67E" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TabItem.Background>
+                            <Grid Background="#FFE5E5E5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="166" VerticalAlignment="Center" Width="494">
+                                    <Border.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FFE6E5DD"/>
+                                            <GradientStop Color="#FFE2DF95" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <Grid Height="120" VerticalAlignment="Center" Background="#FF89EA96" HorizontalAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" Height="75" Text="Data Is In A Text Files So You Could Edit The Data, But Is At Your Own Risk." TextWrapping="Wrap" VerticalAlignment="Center" Width="151" Background="#FFF99824" Foreground="#FF66663E" TextAlignment="Center"/>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,176 @@
+﻿<Window x:Class="Sports.GameDay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sports"
+        mc:Ignorable="d"
+        Title="Game Day" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEAE9E1"/>
+                <GradientStop Color="#FFD8D591" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TabControl Margin="28,28,42,30">
+            <TabItem Header="Football">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="79*"/>
+                        <ColumnDefinition Width="645*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE4E4C9"/>
+                            <GradientStop Color="#FFB9B97A" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Basketball">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFA6A67E" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFE4E4C9"/>
+                            <GradientStop Color="#FFB9B97A" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Width="306" VerticalAlignment="Center" Height="348">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFE4E4D3"/>
+                                <GradientStop Color="#FFEAEAA5" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid Margin="34,28,28,26" Background="#FFDABA2A">
+                            <TextBlock HorizontalAlignment="Left" Height="19" Margin="29,20,0,0" Text="Plays" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" TextAlignment="Center" Background="#FF1EB6D8"/>
+                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="178" Margin="0,54,0,0" VerticalAlignment="Top" Width="184" Background="#FFFF0F0F">
+                                <Grid Background="#FFE6C0C0" Margin="10,9,10,9">
+                                    <Grid Background="#FFE5E5E5" Margin="7,0,81,4">
+                                        <Button Content="Off 1" HorizontalAlignment="Left" Height="21" Margin="5,5,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playone"/>
+                                        <Button Content="Off 2" HorizontalAlignment="Left" Height="21" Margin="5,26,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playtwo"/>
+                                        <Button Content="Off 3" HorizontalAlignment="Left" Height="21" Margin="5,47,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playthree"/>
+                                        <Button Content="Off 4" HorizontalAlignment="Left" Height="21" Margin="5,0,0,0" VerticalAlignment="Center" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfour"/>
+                                        <Button Content="Off 5" HorizontalAlignment="Left" Height="21" Margin="5,90,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfive"/>
+                                        <Button Content="Off 6" HorizontalAlignment="Left" Height="21" Margin="5,111,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playsix"/>
+                                        <Button Content="Off 7" HorizontalAlignment="Left" Height="21" Margin="5,132,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playseven"/>
+                                    </Grid>
+                                    <Grid Background="#FFE5E5E5" Margin="81,0,6,4">
+                                        <Button Content="Def 1-8" HorizontalAlignment="Left" Height="21" Margin="5,5,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playeight"/>
+                                        <Button Content="Def 2-9" HorizontalAlignment="Left" Height="21" Margin="5,26,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playnine"/>
+                                        <Button Content="Def 3-10" HorizontalAlignment="Left" Height="21" Margin="5,47,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playten"/>
+                                        <Button Content="Def 4-11" HorizontalAlignment="Left" Height="21" Margin="5,0,0,0" VerticalAlignment="Center" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playeleven"/>
+                                        <Button Content="Def 5-12" HorizontalAlignment="Left" Height="21" Margin="5,90,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playtwelve"/>
+                                        <Button Content="Def 6-13" HorizontalAlignment="Left" Height="21" Margin="5,111,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playthirteen"/>
+                                        <Button Content="Def 7-14" HorizontalAlignment="Left" Height="21" Margin="5,132,0,0" VerticalAlignment="Top" Width="66" Background="#FFE0A1A1" MouseDoubleClick="playfourteen"/>
+                                    </Grid>
+                                </Grid>
+                            </Border>
+                            <Button Content="TIP-OFF" HorizontalAlignment="Center" Height="23" VerticalAlignment="Bottom" Width="162" Margin="0,0,0,25" MouseDoubleClick="Tipoff">
+                                <Button.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFF3EFEF"/>
+                                        <GradientStop Color="#FFB0B459" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Button.Background>
+                            </Button>
+                        </Grid>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="200" VerticalAlignment="Center" Width="190" Margin="7,0,39,0" Background="#FFB0F16E">
+                        <Grid Background="Black" Margin="9,9,9,9">
+                            <TextBlock HorizontalAlignment="Left" Height="19" Margin="21,10,0,0" Text="Pre-Game Drills" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Background="#FF5CE8E8" TextAlignment="Center"/>
+                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="136" Margin="21,34,0,0" VerticalAlignment="Top" Width="123">
+                                <Border.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFC0C964"/>
+                                        <GradientStop Color="#FFD9E090" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,4,0,0" Height="121" Background="#FFD8C71A">
+                                    <Button Content="Drill 1" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drillone"/>
+                                    <Button Content="Drill 2" HorizontalAlignment="Left" Height="20" Margin="0,20,0,0" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drilltwo"/>
+                                    <Button Content="Drill 3" HorizontalAlignment="Center" Height="20" Margin="0,40,0,0" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drillthree"/>
+                                    <Button Content="Drill 4" HorizontalAlignment="Center" Height="20" Margin="0,60,0,0" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drillfour"/>
+                                    <Button Content="Drill 5" HorizontalAlignment="Center" Height="20" Margin="0,80,0,0" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drillfive"/>
+                                    <Button Content="Drill 6" HorizontalAlignment="Center" Height="20" Margin="0,100,0,0" VerticalAlignment="Top" Width="79" Background="#FFBF76BF" MouseDoubleClick="Drillsix"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Right" Height="200" VerticalAlignment="Center" Width="190" Background="#FFB0F16E" Margin="0,0,7,0">
+                        <Grid Background="Black" Margin="9,9,9,9">
+                            <TextBlock HorizontalAlignment="Left" Height="19" Margin="21,10,0,0" Text="Halftime" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Background="#FF5CE8E8" TextAlignment="Center"/>
+                            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="136" Margin="21,34,0,0" VerticalAlignment="Top" Width="123">
+                                <Border.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFC0C964"/>
+                                        <GradientStop Color="#FFD9E090" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,4,0,0" Height="121" Background="#FFD8C71A" Width="83">
+                                    <Button Content="Create File" HorizontalAlignment="Center" Height="19" Margin="0,10,0,0" VerticalAlignment="Top" Width="63" Background="#FFE012CD" BorderBrush="#FF072838" Foreground="#FF165D3D" MouseDoubleClick="CreateFile"/>
+                                    <Button Content="Open FIle" HorizontalAlignment="Center" Height="19" VerticalAlignment="Center" Width="63" Background="#FFA8E012" BorderBrush="#FF9B6F24" Foreground="#FF4B3E85" MouseDoubleClick="OpenFile" IsCancel="True"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <Border BorderThickness="1,1,1,1" BorderBrush="Black" HorizontalAlignment="Center" Height="53" Margin="499,0,0,3" VerticalAlignment="Bottom" Width="168">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFE9F5E7"/>
+                                <GradientStop Color="#FF40D429" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid HorizontalAlignment="Center" Height="33" VerticalAlignment="Center" Width="136">
+                            <Grid.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFE8E7D9"/>
+                                    <GradientStop Color="#FFDED630" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Grid.Background>
+                            <Button Content="Create Note" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" VerticalAlignment="Center" Width="51" Background="#FF95BB8A" FontSize="8" MouseDoubleClick="CreateNote"/>
+                            <Button Content="Open Note" HorizontalAlignment="Left" Height="23" Margin="75,0,0,0" VerticalAlignment="Center" Width="51" Background="#FF95BB8A" FontSize="8" MouseDoubleClick="OpenNote"/>
+                        </Grid>
+                    </Border>
+                    <Border BorderThickness="1,1,1,1" BorderBrush="Black" HorizontalAlignment="Stretch" Height="53" Margin="499,5,0,0" VerticalAlignment="Top" Width="168">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFE9F5E7"/>
+                                <GradientStop Color="#FF40D429" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid HorizontalAlignment="Center" Height="33" VerticalAlignment="Center" Width="136">
+                            <Grid.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFE8E7D9"/>
+                                    <GradientStop Color="#FFDED630" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Grid.Background>
+                            <Button Content="Create Option" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" VerticalAlignment="Center" Width="51" Background="#FF95BB8A" FontSize="7" MouseDoubleClick="CreateOption"/>
+                            <Button Content="Open Option" HorizontalAlignment="Left" Height="23" Margin="75,0,0,0" VerticalAlignment="Center" Width="51" Background="#FF95BB8A" FontSize="8" MouseDoubleClick="OpenOption"/>
+                        </Grid>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="48" Margin="24,10,0,0" VerticalAlignment="Top" Width="148" Background="Black">
+                        <Grid Margin="9,9,9,9" Background="#FFE8CA45">
+                            <Button Content="Scoreboard" Margin="34,0,37,0" Height="20" VerticalAlignment="Center" Width="50" FontSize="8" Click="BiggerScoreboard"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

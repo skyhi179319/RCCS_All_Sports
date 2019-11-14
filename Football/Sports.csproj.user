@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Basketball_Main_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Football_Help.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Football_Live.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Football_Main_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GameDay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Management.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Players.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Plays.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ScoreBoard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SysPro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Basketball_Main_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Football_Help.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Football_Live.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Football_Main_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GameDay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Management.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Players.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Plays.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ScoreBoard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SysPro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
